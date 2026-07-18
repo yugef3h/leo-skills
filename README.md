@@ -3,7 +3,7 @@
 A collection of production-grade agent skills for Claude Code and other AI agent terminals.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-3-blue" alt="3 Skills" />
+  <img src="https://img.shields.io/badge/Skills-4-blue" alt="4 Skills" />
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License" />
 </p>
 
@@ -14,6 +14,7 @@ A collection of production-grade agent skills for Claude Code and other AI agent
 | [**Oral Sentence Model**](./skills/oral-sentence-model/) | 围绕任意话题生成英语口语"句模"（6问12句），标注词伙/句型/观点，支持拆解复用、跨话题联动、轻量练习 | `npx skills add yugef3h/leo-skills --path skills/oral-sentence-model` |
 | [**ChatBI MVP**](./skills/chatbi-mvp/) | ChatBI 系统架构指南：NL2SQL、多轮对话、RAG 知识库、可视化图表、智能归因分析，参考 SuperSonic 架构 | `npx skills add yugef3h/leo-skills --path skills/chatbi-mvp` |
 | [**SOP Design**](./skills/sop-design/) | Spec + Harness 双支柱 AI 辅助开发流程：文档先行、TDD/SDD、代码审查、AGENTS.md 自动化整理最佳实践，集成 BDD/Conventional Commits/Testing Trophy | `/sop-design` |
+| [**PDF Editor**](./skills/pdf-editor/) | PDF 模板改写全流程：OCR 文本块定位 → 像素级样式分析（颜色/粗细/下划线/缩进）→ 结构化文档定义（AST虚拟DOM）→ 引擎渲染。适配合同/通知函/证书/发票等图片层主导的 PDF | `npx skills add yugef3h/leo-skills --path skills/pdf-editor` |
 
 ## Quick Start
 
@@ -48,6 +49,17 @@ Then invoke in your agent terminal:
 
 # 交付节奏
 "这个 Task 做完了，生成 Conventional Commit message"
+```
+
+```bash
+# 分析 PDF 结构
+"用 pdf-editor 分析这份 PDF，看看有哪些可替换的变量"
+
+# 生成结构化文档定义
+"帮我给这份合同生成 doc_definition.json，把公司名/日期/金额做成可配置变量"
+
+# 修改变量并渲染
+"把公司名改掉、日期改成新的，生成新 PDF"
 ```
 
 ## License
