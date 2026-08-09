@@ -13,7 +13,8 @@ A collection of production-grade agent skills for Claude Code and other AI agent
 |-------|-------------|---------|
 | [**Oral Sentence Model**](./skills/oral-sentence-model/) | 围绕任意话题生成英语口语"句模"（6问12句），标注词伙/句型/观点，支持拆解复用、跨话题联动、轻量练习 | `npx skills add yugef3h/leo-skills --path skills/oral-sentence-model` |
 | [**ChatBI MVP**](./skills/chatbi-mvp/) | ChatBI 系统架构指南：NL2SQL、多轮对话、RAG 知识库、可视化图表、智能归因分析，参考 SuperSonic 架构 | `npx skills add yugef3h/leo-skills --path skills/chatbi-mvp` |
-| [**SOP Design**](./skills/sop-design/) | Spec + Harness 双支柱 AI 辅助开发流程：文档先行、TDD/SDD、代码审查、AGENTS.md 三次原则维护，集成 BDD/Conventional Commits/Testing Trophy | `/sop-design` |
+| [**SOP Design**](./skills/sop-design/) | Spec + Harness 双支柱 AI 辅助开发流程：文档先行、TDD/SDD、代码审查、AGENTS.md 自动化整理最佳实践，集成 BDD/Conventional Commits/Testing Trophy | `/sop-design` |
+| [**PDF Editor**](./skills/pdf-editor/) | PDF 模板改写全流程：OCR 文本块定位 → 像素级样式分析（颜色/粗细/下划线/缩进）→ 结构化文档定义（AST虚拟DOM）→ 引擎渲染。适配合同/通知函/协议等图片层主导的 PDF（**禁止用于伪造，因为有一万种鉴定方法**） | `npx skills add yugef3h/leo-skills --path skills/pdf-editor` |
 | [**Role Card**](./skills/role-card/) | 角色魅力蒸馏：把过往喜欢作品（影视/网文）里的角色蒸馏成精简角色卡，提炼讨喜公式/反转套路入库，反哺小说写作；联网查证 + 依据分级防幻觉 | `npx skills add yugef3h/leo-skills --path skills/role-card` |
 
 ## Quick Start
@@ -46,10 +47,20 @@ Then invoke in your agent terminal:
 
 # Harness 支柱——质量保障
 "审查下刚才这个 Task 的代码，对照 spec 看一致性"
-"AGENTS.md 快 600 行了，帮我压缩一下"
 
 # 交付节奏
 "这个 Task 做完了，生成 Conventional Commit message"
+```
+
+```bash
+# 分析 PDF 结构
+"用 pdf-editor 分析这份 PDF，看看有哪些可替换的变量"
+
+# 生成结构化文档定义
+"帮我给这份合同生成 doc_definition.json，把公司名/日期/金额做成可配置变量"
+
+# 修改变量并渲染
+"把公司名改掉、日期改成新的，生成新 PDF"
 ```
 
 ## License
