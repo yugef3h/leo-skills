@@ -3,7 +3,7 @@
 A collection of production-grade agent skills for Claude Code and other AI agent terminals.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-4-blue" alt="4 Skills" />
+  <img src="https://img.shields.io/badge/Skills-5-blue" alt="5 Skills" />
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License" />
 </p>
 
