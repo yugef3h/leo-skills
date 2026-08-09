@@ -3,7 +3,7 @@
 A collection of production-grade agent skills for Claude Code and other AI agent terminals.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-3-blue" alt="3 Skills" />
+  <img src="https://img.shields.io/badge/Skills-4-blue" alt="4 Skills" />
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License" />
 </p>
 
@@ -14,6 +14,7 @@ A collection of production-grade agent skills for Claude Code and other AI agent
 | [**Oral Sentence Model**](./skills/oral-sentence-model/) | 围绕任意话题生成英语口语"句模"（6问12句），标注词伙/句型/观点，支持拆解复用、跨话题联动、轻量练习 | `npx skills add yugef3h/leo-skills --path skills/oral-sentence-model` |
 | [**ChatBI MVP**](./skills/chatbi-mvp/) | ChatBI 系统架构指南：NL2SQL、多轮对话、RAG 知识库、可视化图表、智能归因分析，参考 SuperSonic 架构 | `npx skills add yugef3h/leo-skills --path skills/chatbi-mvp` |
 | [**SOP Design**](./skills/sop-design/) | Spec + Harness 双支柱 AI 辅助开发流程：文档先行、TDD/SDD、代码审查、AGENTS.md 三次原则维护，集成 BDD/Conventional Commits/Testing Trophy | `/sop-design` |
+| [**Role Card**](./skills/role-card/) | 角色魅力蒸馏：把过往喜欢作品（影视/网文）里的角色蒸馏成精简角色卡，提炼讨喜公式/反转套路入库，反哺小说写作；联网查证 + 依据分级防幻觉 | `npx skills add yugef3h/leo-skills --path skills/role-card` |
 
 ## Quick Start
 
